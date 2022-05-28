@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yugi Calc</title>
+</head>
+
+<body style="text-align: center">
+    <h1>
+      Welcome to Yugi-Calc!
+    </h1>
+    <p>
+      This is a probability calculator for the Yu-Gi-Oh! card game. It calculates the chances of having at least 1 card from a given card group in your starting hand.
+    </p>
+    <lable>Type the group you are interested in, such as "dragons" or "attack boost"</lable>
+    <br>
+    <input type="text" id="groupName" placeholder="Type Group's Name">
+    
+    <br><br>
+    
+    <lable>Type type the number of total cards in your deck (between 40 and 60)</lable>
+    <br>
+    <input type="number" id="deckTotal" placeholder="Type Total Card Count">
+    
+    <br><br>
+    
+    <lable>How many cards of the desired group are in your deck?"</lable>
+    <br>
+    <input type="number" id="groupCount" placeholder="Type Group's Card Count">
+  
+    <br><br>
+    
+    <button type="button" onclick="pushCalculate()">
+      Calculate
+    </button>
+    
+    <br><br>
+    
+    <p>
+      <strong>Results:</strong> <span id="results"></span>
+    </p>
+    
+    <script src="pushCalculate.js"></script>
+  </body>
+
+</html>
